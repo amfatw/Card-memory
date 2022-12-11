@@ -1,11 +1,1 @@
-.game {
-  display: none;
-}
-
-.game.display {
-  display: block;
-}
-
-.game {
-  width: 100%;
-}
+.game{display:none;width:100%}.game.display{display:block}

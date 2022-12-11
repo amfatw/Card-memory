@@ -1,0 +1,27 @@
+.info-link {
+  font-size: 17px;
+  color: #000;
+}
+
+.info-link:hover,
+.info-link:focus {
+  transform: scale(1.1);
+}
+
+.dark-theme .info-link {
+  color: #eab7b7;
+}
+
+
+
+@media (min-width: 768px) {
+  .info-link {
+    font-size: 29px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .info-link {
+    font-size: 33px;
+  }
+}

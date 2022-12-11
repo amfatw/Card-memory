@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card memory game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <ul class="options-list">
+          <li>
+            <audio src="" preload="auto"></audio>
+            <button class="music-switcher music-switcher--pause">
+              <span class="visually-hidden">Music switch</span>
+            </button>
+          </li>
+          <li>
+            <button class="theme-switcher">
+              <span class="visually-hidden">Theme switch</span>
+            </button>
+          </li>
+        </ul>
+      </header>
+
+
+      <main class="page-main">
+        <h1 class="visually-hidden">Card memory game</h1>
+        <section class="preloader">
+          <h2 class="preloader__text">Loading</h2>
+        </section>
+        <section class="mode-select">
+          <h2 class="visually-hidden">Game mode select</h2>
+          <p class="mode-select__text">Select mode</p>
+          <ul class="mode-select__options">
+            <li class="mode-select__option" data-mode="1">
+              <span class="mode-select__number">1</span>
+              <table class="mode-select__details">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>ammount</th>
+                    <th>of what</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mode-select__cards-text">6</td>
+                    <td class="mode-select__cards-image">
+                      <span class="visually-hidden">cards</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mode-select__tries-text">2</td>
+                    <td class="mode-select__tries-image">
+                      <span class="visually-hidden">tries</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="mode-select__option" data-mode="2">
+              <span class="mode-select__number">2</span>
+              <table class="mode-select__details">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>ammount</th>
+                    <th>of what</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mode-select__cards-text">10</td>
+                    <td class="mode-select__cards-image">
+                      <span class="visually-hidden">cards</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mode-select__tries-text">5</td>
+                    <td class="mode-select__tries-image">
+                      <span class="visually-hidden">tries</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="mode-select__option" data-mode="3">
+              <span class="mode-select__number">3</span>
+              <table class="mode-select__details">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>ammount</th>
+                    <th>of what</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="mode-select__cards-text">16</td>
+                    <td class="mode-select__cards-image">
+                      <span class="visually-hidden">cards</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="mode-select__tries-text">8</td>
+                    <td class="mode-select__tries-image">
+                      <span class="visually-hidden">tries</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </section>
+
+        <section class="game">
+          <h2 class="visually-hidden">Game field</h2>
+          <p class="tries-counter game__tries-counter"></p>
+          <ul class="cards-list">
+            <li class="card" data-number="1">
+              <img class="card__front" src="#" alt="card-1">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="1">
+              <img class="card__front" src="#" alt="card-1">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="2">
+              <img class="card__front" src="#" alt="card-2">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="2">
+              <img class="card__front" src="#" alt="card-2">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="3">
+              <img class="card__front" src="#" alt="card-3">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="3">
+              <img class="card__front" src="#" alt="card-3">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="4">
+              <img class="card__front" src="#" alt="card-4">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="4">
+              <img class="card__front" src="#" alt="card-4">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="5">
+              <img class="card__front" src="#" alt="card-5">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="5">
+              <img class="card__front" src="#" alt="card-5">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="6">
+              <img class="card__front" src="#" alt="card-6">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="6">
+              <img class="card__front" src="#" alt="card-6">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="7">
+              <img class="card__front" src="#" alt="card-7">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="7">
+              <img class="card__front" src="#" alt="card-7">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="8">
+              <img class="card__front" src="#" alt="card-8">
+              <div class="card__back"></div>
+            </li>
+            <li class="card" data-number="8">
+              <img class="card__front" src="#" alt="card-8">
+              <div class="card__back"></div>
+            </li>
+          </ul>
+        </section>
+
+        <secton class="game-result">
+          <h2 class="visually-hidden">Game result</h2>
+          <div class="game-result__container">
+            <p class="game-result__text game-result__text--win">You won</p>
+            <p class="game-result__text game-result__text--lose">You lose</p>
+            <ul class="game-result__buttons-list">
+              <li>
+                <button class="game-result__button new-cards-button">New cards</button>
+              </li>
+              <li>
+                <button class="game-result__button new-game-button">New game</button>
+              </li>
+            </ul>
+          </div>
+        </secton>
+      </main>
+
+
+      <footer>
+        <a href="#" class="info-link">Info</a>
+
+        <section class="info">
+          <h2 class="visually-hidden">Info</h2>
+          <div class="info__container">
+            <button class="info__close-button"></button>
+            <label>
+              <p class="info__text">Develop:</p>
+              <a class="info__link" href="mailto:amfatw@mail.ru">
+                <p class="info__link-plug">Mail</p>
+                <p class="info__link-address">amfatw@mail.ru</p>
+              </a>
+            </label>
+            <label>
+              <p class="info__text">Design:</p>
+              <a class="info__link" href="#">
+                <p class="info__link-plug">Mail</p>
+                <p class="info__link-address">someaddress</p>
+              </a>
+            </label>
+            <label>
+              <p class="info__text">Images:</p>
+              <a class="info__link" href="https://waifu.im/">
+                <p class="info__link-plug">Link</p>
+                <p class="info__link-address">https://waifu.im/</p>
+              </a>
+            </label>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

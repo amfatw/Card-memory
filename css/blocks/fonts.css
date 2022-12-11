@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Apple Days";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Apple Days"),
+       url("../../fonts/AppleDays.woff2") format("woff2"),
+       url("../../fonts/AppleDays.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Donut & Candy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Donut & Candy"),
+       url("../../fonts/DonutCandy.woff2") format("woff2"),
+       url("../../fonts/DonutCandy.woff") format("woff");
+}

@@ -1,0 +1,73 @@
+.tries-counter {
+  position: relative;
+  
+  width: fit-content;
+  padding-left: 32px;
+  
+  font-size: 25px;
+  color: #762125;
+}
+
+.tries-counter::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 23px;
+  height: 23px;
+
+  content: '';
+  background-image: url('../../img/svg/tries-counter-heart.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game__tries-counter {
+  margin-bottom: 18px;
+  margin-top: -48px;
+}
+
+.dark-theme .tries-counter {
+  color: #eab7b7;
+}
+
+.dark-theme .tries-counter::before {
+  background-image: url('../../img/svg/tries-counter-heart-dark-theme.svg');
+}
+
+@media (min-width: 768px) {
+  .tries-counter {    
+    padding-left: 50px;
+    
+    font-size: 41px;
+  }
+  
+  .tries-counter::before {
+    width: 37px;
+    height: 37px;
+  }
+  
+  .game__tries-counter {
+    margin-bottom: 45px;
+    margin-top: -93px;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  .tries-counter {    
+    padding-left: 55px;
+    
+    font-size: 45px;
+  }
+  
+  .tries-counter::before {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .game__tries-counter {
+    margin-bottom: 45px;
+    margin-top: -97px;
+  }
+}

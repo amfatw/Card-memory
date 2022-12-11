@@ -114,7 +114,7 @@ info.block.addEventListener('pointerdown', function(evt) {
   }
 });
 
-music.loadSong();
+// music.loadSong();
 
 music.audio.addEventListener('ended', function() {
   music.nextSong();

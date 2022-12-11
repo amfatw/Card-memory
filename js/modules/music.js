@@ -1,5 +1,5 @@
 let music = {
-  songs: ['Chirrrex - China.mp3', 'ColorfulCat - Rurikon.mp3', 'ColorfulCat - Love.mp3'],
+  songs: ['Chirrrex-China.mp3', 'ColorfulCat-Rurikon.mp3', 'ColorfulCat-Love.mp3'],
   path: '../music/',
   songIndex: 0,
   audio: document.querySelector('audio'),

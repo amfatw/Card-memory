@@ -1,6 +1,6 @@
 let music = {
   songs: ['Chirrrex-China.mp3', 'ColorfulCat-Rurikon.mp3', 'ColorfulCat-Love.mp3'],
-  path: '../music/',
+  path: './music/',
   songIndex: 0,
   audio: document.querySelector('audio'),
   button: document.querySelector('.music-switcher'),

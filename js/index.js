@@ -143,3 +143,15 @@ music.button.addEventListener('pointerdown', function() {
 themeSwitcher.block.addEventListener('pointerdown', function() {
   themeSwitcher.switch()
 })
+
+
+const sendRequest = function() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://api.waifu.im/search/?many=true&gif=false&orientation=PORTRAIT');
+  xhr.responseType = 'json';
+  xhr.setRequestHeader('Accept-Version', 'v4');
+  
+  xhr.send();
+}
+
+sendRequest();

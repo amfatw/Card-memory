@@ -1,7 +1,5 @@
 import {game} from './game.js';
 
-
-
 const cards = {
   images: [],
   preparedImages: [],
@@ -10,7 +8,11 @@ const cards = {
   imagesBlocks: document.querySelectorAll('.card__front'),
 
   getImages: async function(imagesNeeded = 8) {
-    let response = await fetch('https://api.waifu.im/search/?many=true&gif=false&orientation=PORTRAIT');
+    let response = await fetch('https://api.waifu.im/search/?many=true&gif=false&orientation=PORTRAIT', {
+      headers: {
+        'Accept-Version': 'v4'
+      }
+    });
     
     if (!response.ok) {
       alert("Ошибка HTTP: " + response.status);

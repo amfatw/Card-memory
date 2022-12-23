@@ -1,0 +1,22 @@
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: fit-content;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+
+
+@media (min-width: 768px) {
+  .options-list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .options-list {
+    gap: 50px;
+  }
+}

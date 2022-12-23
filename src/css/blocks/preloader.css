@@ -1,0 +1,109 @@
+.preloader {
+  display: none;
+}
+
+.preloader.display {
+  display: block;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.preloader__text {
+  position: relative;
+
+  padding-top: 40px;
+
+  font-family: 'Apple Days', 'Arial Black', sans-serif;
+  font-size: 25px;
+}
+
+.preloader__text::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  content: '';
+
+  background-image: url('../../img/svg/preloader-heart.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark-theme .preloader__text {
+  color: #eab7b7;
+}
+
+.dark-theme .preloader__text::before {
+  background-image: url('../../img/svg/preloader-heart-dark-theme.svg');
+}
+
+
+
+
+
+@media (min-width:768px) {
+  .preloader__text {
+    padding-top: 59px;
+
+    font-size: 37px;
+  }
+
+  .preloader__text::before {
+    width: 44px;
+    height: 44px;
+    margin-left: -22px;
+  }
+}
+
+@media (min-width:1366px) {
+  .preloader__text {
+    padding-top: 88px;
+
+    font-size: 55px;
+  }
+
+  .preloader__text::before {
+    width: 66px;
+    height: 66px;
+    margin-left: -33px;
+  }
+}
+
+
+
+
+
+
+.preloader__text::before {
+  animation: heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
